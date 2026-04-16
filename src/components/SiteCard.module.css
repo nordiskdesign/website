@@ -13,18 +13,24 @@
 }
 
 .preview {
-  height: 160px;
+  position: relative;
+  height: 200px;
+  overflow: hidden;
   background: #f3f3f3;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.initial {
-  font-size: 2.5rem;
-  font-weight: 600;
-  color: #ccc;
-  user-select: none;
+.iframe {
+  width: 1440px;
+  height: 900px;
+  border: none;
+  transform-origin: top left;
+  pointer-events: none;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
 }
 
 .body {
